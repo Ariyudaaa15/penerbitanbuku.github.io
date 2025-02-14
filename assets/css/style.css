@@ -1,0 +1,242 @@
+/* Styling Header */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.header {
+    background: linear-gradient(rgba(10, 40, 90, 0.8), rgba(10, 40, 90, 0.8)), url('../foto/bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Styling Text */
+.header h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+/* Styling Button */
+.btn-warning {
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Tentang Kami */
+/* Style Section Tentang Kami */
+.tentang-kami {
+    background-color: #f8f9fa;
+}
+
+.tentang-kami h1 {
+    color: black;
+}
+
+.tentang-kami h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tentang-kami p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Ukuran Gambar Lebih Kecil di Section Tentang Kami */
+.tentang-kami .img-fluid {
+    max-width: 80%;
+    /* Lebar maksimal gambar 80% dari kolom */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tentang-kami .img-fluid:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive untuk Mobile */
+@media (max-width: 768px) {
+    .tentang-kami .row {
+        text-align: center;
+    }
+
+    .tentang-kami .col-md-6 {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Penerbittan Buku */
+
+
+.kenapa-deepublish {
+    background-color: #002F6C;
+}
+
+.card-keunggulan {
+    background-color: #FFA726;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card-keunggulan:hover {
+    transform: translateY(-10px);
+}
+
+.card-keunggulan .icon i {
+    color: white;
+}
+
+.card-keunggulan h5 {
+    color: white;
+}
+
+.card-keunggulan p {
+    color: white;
+    font-size: 14px;
+}
+
+/* Apakah Tertarik */
+
+.apakah-tertarik {
+    background-color: #F8F9FA;
+}
+
+.apakah-tertarik h2 {
+    color: #002F6C;
+}
+
+.apakah-tertarik p {
+    text-align: justify;
+    color: #444;
+}
+
+.apakah-tertarik img {
+    max-width: 60%;
+    border-radius: 50%;
+}
+
+.semakin-tertarik h3 {
+    color: #002F6C;
+}
+
+.card-paket {
+    background-color: #FFA726;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card-paket:hover {
+    transform: translateY(-10px);
+}
+
+/* Taukah Anda  */
+
+.row.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.foto-testimoni {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+.testimoni-box {
+    background: white;
+    color: black;
+    border-left: 5px solid #0A2A56;
+    margin-left: 20px;
+    position: relative;
+}
+
+.testimoni-box::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -15px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Mitra */
+
+.text-orange {
+    color: #FF6600;
+}
+
+.logo-slider img {
+    width: 120px;
+    height: auto;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+}
+
+.logo-slider img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+/* F & Q */
+
+.accordion-button {
+    background-color: #FF6600;
+    color: white;
+    border: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    filter: invert(1);
+}
+
+.accordion-body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Bagian Gambar */
+
+.cta-section {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+}
+
+.cta-section h2,
+.cta-section p {
+    color: #fff;
+}
+
+.cta-section .btn-warning {
+    background-color: #FF6600;
+    border: none;
+    transition: all 0.3s;
+}
+
+.cta-section .btn-warning:hover {
+    background-color: #cc5200;
+}
